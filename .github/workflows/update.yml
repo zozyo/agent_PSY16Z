@@ -33,4 +33,4 @@ jobs:
         run: |
           export CHARACTER=$(cat ./character.json | sed 's/"/\"/g')
           export DATA=$(echo '{"characterfile": "'${CHARACTER}'", "env_keys": ["TELEGRAM_BOT_TOKEN", "REDPILL_API_KEY", "REDPILL_MODEL", "CHARACTER_DATA"], "encrypted_env": "'${{ env.ENCRYPTED_ENV }}'", "image": "phalanetwork/eliza:v0.1.8-alpha.1"}')
-          curl -v -X PUT -H "X-API-Key: ${{ env.PHALA_CLOUD_API_KEY }}" -H 'Content-Type: application/json' -d ${DATA} https://cloud-api.phala.network/api/v1/projects/${{ env.PROJECT_ID }}/eliza
+          curl -X PUT -H "X-API-Key: ${{ env.PHALA_CLOUD_API_KEY }}" -H 'Content-Type: application/json' -d ${DATA} https://cloud-api.phala.network/api/v1/projects/${{ env.PROJECT_ID }}/eliza
