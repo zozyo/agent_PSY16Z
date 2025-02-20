@@ -5,8 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "api-server/pyproject.toml"
-      - "api-server/Dockerfile"
+      - "./character.json"
   workflow_dispatch:
     inputs:
       logLevel:
