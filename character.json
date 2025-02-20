@@ -1,7 +1,7 @@
 {
   "name": "PSY16Z",
   "clients": [
-    "telegram"
+    "telegram",
   ],
   "modelProvider": "redpill",
   "settings": {
