@@ -1,4 +1,4 @@
-name: Build, Push & Deploy to Phala TEE
+name: Update character.json
 
 on:
   push:
