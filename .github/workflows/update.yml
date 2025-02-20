@@ -32,4 +32,4 @@ jobs:
       - name: update json
         run: |
           export CHARACTER=$(cat ./character.json)
-          curl -X PUT -sH "X-API-Key: ${{ env.PHALA_CLOUD_API_KEY }}" -H 'Content-Type: application/json' -d "$(echo '{"characterfile": "'${CHARACTER}'", "env_keys": ["TELEGRAM_BOT_TOKEN", "REDPILL_API_KEY", "REDPILL_MODEL", "CHARACTER_DATA"], "encrypted_env": "'${{ env.ENCRYPTED_ENV }}'", "image": "phalanetwork/eliza:v0.1.8-alpha.1"}')" https://cloud-api.phala.network/api/v1/projects/${{ env.PROJECT_ID }}/eliza
+          curl -X PUT -H "X-API-Key: ${{ env.PHALA_CLOUD_API_KEY }}" -H 'Content-Type: application/json' -d "$(echo '{"characterfile": "'${CHARACTER}'", "env_keys": ["TELEGRAM_BOT_TOKEN", "REDPILL_API_KEY", "REDPILL_MODEL", "CHARACTER_DATA"], "encrypted_env": "'${{ env.ENCRYPTED_ENV }}'", "image": "phalanetwork/eliza:v0.1.8-alpha.1"}')" https://cloud-api.phala.network/api/v1/projects/${{ env.PROJECT_ID }}/eliza
