@@ -6,8 +6,6 @@
   "modelProvider": "redpill",
   "settings": {
     "secrets": {
-// phala/deepseek-r1-70b is temporarily down, Phala team is fixing now. Considering the current testing phase, there is no privacy exposure issue. Switch to deepseek/deepseek-chat temporarily.
-//      "REDPILL_MODEL": "phala/deepseek-r1-70b"
       "REDPILL_MODEL": "deepseek/deepseek-chat"
     },
     "voice": {}
