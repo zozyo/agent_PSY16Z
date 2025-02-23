@@ -6,7 +6,7 @@
   "modelProvider": "redpill",
   "settings": {
     "secrets": {
-      "REDPILL_MODEL": "deepseek/deepseek-chat"
+      "REDPILL_MODEL": "phala/deepseek-r1-70b"
     },
     "voice": {}
   },
